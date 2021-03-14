@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <header class="header-container">
+    </header>
+    <main class="main-container">
+      <h1 class="main-heading">IP Adress Tracker</h1>
+      <div class="form-container">
+        <input class="form-input" type="text" id="form-input" placeholder="Search for any IP address or domain">
+        <button class="form-btn" type="submit" id="form-btn"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+      </div>
+      <section class="results-container">
+        <article class="results-item" id="ip-address">
+          <h2 class="results-heading">IP ADDRESS</h2>
+          <p class="results-content" id="ip-address-result">192.212.174.101</p>
+          </article>
+        <article class="results-item" id="location">
+          <h2 class="results-heading">LOCATION</h2>
+          <p class="results-content"id="location-result">Brooklyn, NY 10001</p>
+          </article>
+        <article class="results-item" id="time-zone">
+          <h2 class="results-heading">TIMEZONE</h2>
+          <p class="results-content" id="time-zone-result">UTC-05:00</p>
+          </article>
+        <article class="results-item" id="isp">
+          <h2 class="results-heading">ISP</h2>
+          <p class="results-content" id="isp-result">SpaceX Starlink</p>
+          </article>
+      </section>
+    </main>
+     <footer class="footer-container">
+       <div class="map-container" id="map-container">
+       </div>
+     </footer>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
