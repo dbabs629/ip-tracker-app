@@ -28,10 +28,6 @@ p {
 	border: none;
 }
 
-.attribution a {
-	color: white;
-}
-
 a {
 	color: white;
 }
@@ -43,14 +39,6 @@ a:-webkit-any-link {
 a:visited {
 	color: white;
 	text-decoration: underline;
-}
-
-a.attribution-link {
-	color: white;
-}
-
-a.attribution-link:visited {
-	color: white;
 }
 
 /* -- Container Elements -- */
